@@ -25,7 +25,6 @@ url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from SheebaQueen import BOT_ID
 from SheebaQueen.helper_extra.aichat import add_chat, get_session, remove_chat
 from SheebaQueen.pyrogramee.pluginshelper import admins_only, edit_or_reply
 from SheebaQueen import pbot as Sheeba
@@ -91,8 +90,7 @@ async def hmm(_, message):
     group=2,
 )
 async def hmm(client, message):
-    if not get_session(int(message.chat.id)):
-        message.continue_propagation()
+
     if message.reply_to_message.from_user.id != BOT_ID:
         message.continue_propagation()
     msg = message.text
@@ -192,7 +190,7 @@ async def hmm(client, message):
             print(e)
 
 
-@Sheeba.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
+@Sheeba.on_message(filters.text & filters.reply & ~filters.bot)
 async def inuka(client, message):
     msg = message.text
     if msg.startswith("/") or msg.startswith("@"):
