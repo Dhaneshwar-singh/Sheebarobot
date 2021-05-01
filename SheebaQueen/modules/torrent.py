@@ -4,7 +4,7 @@ from telethon import events
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from SheebaQueen.services.mongo import mongodb as db
+from SheebaQueen.services.mongodb import mongodb as db
 from SheebaQueen.services.telethon import tbot
 
 approved_users = db.approve
