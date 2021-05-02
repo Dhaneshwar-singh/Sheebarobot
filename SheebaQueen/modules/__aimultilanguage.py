@@ -90,8 +90,7 @@ async def hmm(_, message):
     group=2,
 )
 async def hmm(client, message):
-
-    if message.reply_to_message.from_user.id != BOT_ID:
+if message.reply_to_message.from_user.id != BOT_ID:
         message.continue_propagation()
     msg = message.text
     chat_id = message.chat.id
