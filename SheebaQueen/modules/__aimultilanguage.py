@@ -35,7 +35,7 @@ translator = google_translator()
 def extract_emojis(s):
     return "".join(c for c in s if c in emoji.UNICODE_EMOJI)
 
-
+BOT_ID = 1770968368
 Sheeba_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
