@@ -1,4 +1,3 @@
- 
 #    Copyright (C) 2020-2021 by @AmarnathCdj & @InukaAsith
 #    Chatbot system written by @AmarnathCdj databse added and recoded for pyrogram by @InukaAsith
 #    This programme is a part of Sheeba (TG bot) project
