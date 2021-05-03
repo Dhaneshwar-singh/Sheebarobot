@@ -22,7 +22,7 @@ import re
 import emoji
 import requests
 
-url = "https://waifu-ai.p.rapidapi.com/get"
+url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 from google_trans_new import google_translator
 from pyrogram import filters
 
@@ -109,7 +109,7 @@ async def hmm(client, message):
         }
         headers = {
             "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
-            "x-rapidapi-host": "waifu-ai.p.rapidapi.com",
+            "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
         }
         response = requests.request("GET", url, headers=headers, params=querystring)
         result = response.text
@@ -171,7 +171,7 @@ async def hmm(client, message):
         }
         headers = {
             "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
-            "x-rapidapi-host": "waifu-ai.p.rapidapi.com",
+            "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
         }
         response = requests.request("GET", url, headers=headers, params=querystring)
         result = response.text
@@ -241,7 +241,7 @@ async def inuka(client, message):
     }
     headers = {
         "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
-        "x-rapidapi-host": "waifu-ai.p.rapidapi.com",
+        "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     result = response.text
@@ -318,7 +318,7 @@ async def inuka(client, message):
     }
     headers = {
         "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
-        "x-rapidapi-host": "waifu-ai.p.rapidapi.com",
+        "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     result = response.text
