@@ -22,7 +22,7 @@ import re
 import emoji
 import requests
 
-url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
+url = "https://waifu-ai.p.rapidapi.com/get"
 from google_trans_new import google_translator
 from pyrogram import filters
 
@@ -108,8 +108,8 @@ async def hmm(client, message):
             "msg": {test},
         }
         headers = {
-            "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
-            "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
+            "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
+            "x-rapidapi-host": "waifu-ai.p.rapidapi.com",
         }
         response = requests.request("GET", url, headers=headers, params=querystring)
         result = response.text
@@ -170,8 +170,8 @@ async def hmm(client, message):
             "msg": {test},
         }
         headers = {
-            "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
-            "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
+            "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
+            "x-rapidapi-host": "waifu-ai.p.rapidapi.com",
         }
         response = requests.request("GET", url, headers=headers, params=querystring)
         result = response.text
@@ -240,8 +240,8 @@ async def inuka(client, message):
         "msg": {test},
     }
     headers = {
-        "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
-        "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
+        "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
+        "x-rapidapi-host": "waifu-ai.p.rapidapi.com",
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     result = response.text
@@ -317,8 +317,8 @@ async def inuka(client, message):
         "msg": {test},
     }
     headers = {
-        "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
-        "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
+        "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
+        "x-rapidapi-host": "waifu-ai.p.rapidapi.com",
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     result = response.text
