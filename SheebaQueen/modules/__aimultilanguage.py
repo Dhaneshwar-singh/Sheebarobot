@@ -44,7 +44,7 @@ en_chats = []
 @sheeba.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
 @admins_only
 async def hmm(_, message):
-    global asuna_chats
+    global sheeba_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -56,10 +56,10 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("asuna AI Already Activated In This Chat")
+            await lel.edit("sheeba AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"asuna AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"sheeba AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
