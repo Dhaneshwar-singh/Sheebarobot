@@ -41,10 +41,10 @@ en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 
 
-@Sheeba.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
+@sheeba.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
 @admins_only
 async def hmm(_, message):
-    global Sheeba_chats
+    global asuna_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -56,20 +56,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Sheeba AI Already Activated In This Chat")
+            await lel.edit("asuna AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Sheeba AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"asuna AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Sheeba AI Was Not Activated In This Chat")
+            await lel.edit("sheeba AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Sheeba AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"sheeba AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -85,12 +85,11 @@ async def hmm(_, message):
         )
 
 
-@Sheeba.on_message(
+@sheeba.on_message(
     filters.text & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
     group=2,
 )
 async def hmm(client, message):
-
     if message.reply_to_message.from_user.id != BOT_ID:
         message.continue_propagation()
     msg = message.text
@@ -99,8 +98,8 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("Sheeba", "Aco")
-        test = test.replace("Sheeba", "Aco")
+        test = test.replace("sheeba", "Aco")
+        test = test.replace("sheeba", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -108,19 +107,19 @@ async def hmm(client, message):
             "msg": {test},
         }
         headers = {
-            "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
+            "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
             "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
         }
         response = requests.request("GET", url, headers=headers, params=querystring)
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "Sheeba")
+        result = result.replace("Aco", "sheeba")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         pro = result
         try:
-            await Sheeba.send_chat_action(message.chat.id, "typing")
+            await sheeba.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError as e:
             print(e)
@@ -161,8 +160,8 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("Sheeba", "Aco")
-        test = test.replace("Sheeba", "Aco")
+        test = test.replace("sheeba", "Aco")
+        test = test.replace("sheeba", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -170,27 +169,27 @@ async def hmm(client, message):
             "msg": {test},
         }
         headers = {
-            "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
+            "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
             "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
         }
         response = requests.request("GET", url, headers=headers, params=querystring)
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "Sheeba")
+        result = result.replace("Aco", "sheeba")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         pro = result
         if not "en" in lan and not lan == "":
             pro = translator.translate(pro, lang_tgt=lan[0])
         try:
-            await Sheeba.send_chat_action(message.chat.id, "typing")
+            await asuna.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError as e:
             print(e)
 
 
-@Sheeba.on_message(filters.text & filters.reply & ~filters.bot)
+@sheeba.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
 async def inuka(client, message):
     msg = message.text
     if msg.startswith("/") or msg.startswith("@"):
@@ -231,8 +230,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("Sheeba", "Aco")
-    test = test.replace("Sheeba", "Aco")
+    test = test.replace("sheeba", "Aco")
+    test = test.replace("sheeba", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -240,33 +239,33 @@ async def inuka(client, message):
         "msg": {test},
     }
     headers = {
-        "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
+        "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
         "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "Sheeba")
+    result = result.replace("Aco", "sheeba")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     pro = result
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await Sheeba.send_chat_action(message.chat.id, "typing")
+        await asuna.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError as e:
         print(e)
 
 
-@Sheeba.on_message(
-    filters.regex("Sheeba|Sheeba|DeveloperBoy|hello|hi")
+@sheeba.on_message(
+    filters.regex("sheeba|Sheeba|DeveloperBoy|hello|hi")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
     & ~filters.reply
-    & ~filters.channel
+    & ~filters.channel  
 )
 async def inuka(client, message):
     msg = message.text
@@ -308,8 +307,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("Sheeba", "Aco")
-    test = test.replace("Sheeba", "Aco")
+    test = test.replace("sheeba", "Aco")
+    test = test.replace("sheeba", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -317,21 +316,21 @@ async def inuka(client, message):
         "msg": {test},
     }
     headers = {
-        "x-rapidapi-key": "de74833c94msh537352dee3a2aa1p1b91c7jsn0fcff8d73c9e",
+        "x-rapidapi-key": "cf9e67ea99mshecc7e1ddb8e93d1p1b9e04jsn3f1bb9103c3f",
         "x-rapidapi-host": "acobot-brainshop-ai-v1.p.rapidapi.com",
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "Sheeba")
+    result = result.replace("Aco", "sheeba")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     pro = result
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await Sheeba.send_chat_action(message.chat.id, "typing")
+        await asuna.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError as e:
         print(e)
