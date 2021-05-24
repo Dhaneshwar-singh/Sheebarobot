@@ -373,8 +373,8 @@ async def inuka(client, message):
 
 
 __help__ = """
-<b> Chatbot </b>
-<i> PRESENTING ASUNA AI 3.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES </i>
+       Chatbot 
+   PRESENTING Sheeba AI 3.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES 
  - /chatbot <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
 * DaisyAI can detect and reply upto 200 languages by now *
  - /chatbot EN : Enables English only chatbot
