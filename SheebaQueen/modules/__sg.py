@@ -20,9 +20,9 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
-from SheebaQueen.services.events import register as Daisy
-from SheebaQueen.services.telethon import tbot
-from Sheeba.services.telethonuserbot import ubot
+from SheebaQueen.pyrogramee.events import register as Daisy
+from SheebaQueen.pyrogramee.telethon import tbot
+from Sheeba.pyrogramee.telethonuserbot import ubot
 
 
 async def is_register_admin(chat, user):
