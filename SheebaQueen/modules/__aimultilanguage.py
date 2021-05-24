@@ -394,16 +394,3 @@ __help__ = """
 """
 
 __mod_name__ = "AI Assistant"
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
