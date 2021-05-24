@@ -30,7 +30,7 @@ from pyrogram import filters
 from SheebaQueen import BOT_ID
 from SheebaQueen.helper_extra.aichat import add_chat, get_session, remove_chat
 from SheebaQueen.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from SheebaQueen import pbot as sheeba
+from SheebaQueen import pbot as asuna
 
 translator = google_translator()
 
