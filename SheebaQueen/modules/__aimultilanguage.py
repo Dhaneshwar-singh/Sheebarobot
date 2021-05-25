@@ -1,21 +1,4 @@
-#    Copyright (C) 2020-2021 by @AmarnathCdj & @InukaAsith
-#    Chatbot system written by @AmarnathCdj databse added and recoded for pyrogram by @InukaAsith
-#    This programme is a part of asuna (TG bot) project
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#    Kang with the credits
-#    Special credits to @AmarnathCdj
 import re
 
 import emoji
@@ -376,13 +359,13 @@ __help__ = """
        Chatbot 
    PRESENTING Sheeba AI 3.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES 
  - /chatbot <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
-* DaisyAI can detect and reply upto 200 languages by now *
+* SHEEBA AI can detect and reply upto 200 languages by now *
  - /chatbot EN : Enables English only chatbot
  
 <b> Lydia </b>
 <i> PRESENTING DAISY'S LYDIA, EXCLUSIVE CHAT FEATURE DETECT UPTO 200 LANGUAGES & REPLY USING LYDIA AI</i>
  - /addlydia: Activates lydia on your group
-* Daisy AI can detect and reply upto 200 languages by now *
+* SHEEBA AI can detect and reply upto 200 languages by now *
  - /enlydia : Enables English only chat AI
  - /rmlydia : Deactivates lydia on your group (UNSTABLE)
  
