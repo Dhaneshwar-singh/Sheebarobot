@@ -13,7 +13,7 @@ from pyrogram import filters
 from SheebaQueen import BOT_ID
 from SheebaQueen.helper_extra.aichat import add_chat, get_session, remove_chat
 from SheebaQueen.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from SheebaQueen import pbot as asuna
+from SheebaQueen import pbot as sheeba
 
 translator = google_translator()
 
@@ -22,11 +22,11 @@ def extract_emojis(s):
     return "".join(c for c in s if c in emoji.UNICODE_EMOJI)
 
 
-asuna_chats = []
+sheeba_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 """
-@asuna.on_message(
+@sheeba.on_message(
     filters.voice & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
     group=2,
 )
@@ -58,7 +58,7 @@ async def hmm(client, message):
 """
 
 
-@asuna.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
+@sheeba.on_message(filters.command("chatbot") & ~filters.edited & ~filters.bot)
 @admins_only
 async def hmm(_, message):
     global daisy_chats
@@ -73,20 +73,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Asuna AI Already Activated In This Chat")
+            await lel.edit("Sheeba AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Asuna AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Sheeba AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Asuna AI Was Not Activated In This Chat")
+            await lel.edit("sheeba AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Asuna AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"sheeba AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -102,7 +102,7 @@ async def hmm(_, message):
         )
 
 
-@asuna.on_message(
+@sheeba.on_message(
     filters.text & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
     group=2,
 )
@@ -117,8 +117,8 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("asuna", "Aco")
-        test = test.replace("Asuna", "Aco")
+        test = test.replace("sheeba", "Aco")
+        test = test.replace("sheeba", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -133,12 +133,12 @@ async def hmm(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "Asuna")
+        result = result.replace("Aco", "sheeba")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         pro = result
         try:
-            await asuna.send_chat_action(message.chat.id, "typing")
+            await sheeba.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError as e:
             print(e)
@@ -179,8 +179,8 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("asuna", "Aco")
-        test = test.replace("Asuna", "Aco")
+        test = test.replace("sheeba", "Aco")
+        test = test.replace("sheeba", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -195,20 +195,20 @@ async def hmm(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "Asuna")
+        result = result.replace("Aco", "sheeba")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         pro = result
         if not "en" in lan and not lan == "":
             pro = translator.translate(pro, lang_tgt=lan[0])
         try:
-            await asuna.send_chat_action(message.chat.id, "typing")
+            await sheeba.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError as e:
             print(e)
 
 
-@asuna.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
+@sheeba.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
 async def inuka(client, message):
     msg = message.text
     if msg.startswith("/") or msg.startswith("@"):
@@ -249,8 +249,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("asuna", "Aco")
-    test = test.replace("Asuna", "Aco")
+    test = test.replace("sheeba", "Aco")
+    test = test.replace("sheeba", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -265,21 +265,21 @@ async def inuka(client, message):
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "Asuna")
+    result = result.replace("Aco", "sheeba")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     pro = result
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await daisyx.send_chat_action(message.chat.id, "typing")
+        await sheeba.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError as e:
         print(e)
 
 
-@asuna.on_message(
-    filters.regex("Asuna||Asuna|asuna|Asuna")
+@sheeba.on_message(
+    filters.regex("sheeba||Sheeba|sheeba|sheeba")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -349,7 +349,7 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await asuna.send_chat_action(message.chat.id, "typing")
+        await sheeba.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError as e:
         print(e)
@@ -359,13 +359,13 @@ __help__ = """
        Chatbot 
    PRESENTING Sheeba AI 3.0. THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES 
  - /chatbot <i>ON/OFF</i>: Enables and disables AI Chat mode (EXCLUSIVE)
-* SHEEBA AI can detect and reply upto 200 languages by now *
+* DaisyAI can detect and reply upto 200 languages by now *
  - /chatbot EN : Enables English only chatbot
  
 <b> Lydia </b>
 <i> PRESENTING DAISY'S LYDIA, EXCLUSIVE CHAT FEATURE DETECT UPTO 200 LANGUAGES & REPLY USING LYDIA AI</i>
  - /addlydia: Activates lydia on your group
-* SHEEBA AI can detect and reply upto 200 languages by now *
+* Daisy AI can detect and reply upto 200 languages by now *
  - /enlydia : Enables English only chat AI
  - /rmlydia : Deactivates lydia on your group (UNSTABLE)
  
