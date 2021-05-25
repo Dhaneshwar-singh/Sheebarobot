@@ -102,7 +102,7 @@ async def hmm(_, message):
         )
 
 
-@
+
 
 @sheeba.on_message(filters.text & filters.private & filters.reply & ~filters.bot)
 async def inuka(client, message):
