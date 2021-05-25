@@ -2,7 +2,7 @@ import asyncio
 import sys
 
 from motor import motor_asyncio
-from AsunaRobot import MONGO_DB_URI 
+from SheebaQueen import MONGO_DB_URI 
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 from SheebaQueen.conf import get_int_key, get_str_key
