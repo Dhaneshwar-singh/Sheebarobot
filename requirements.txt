@@ -16,6 +16,7 @@ spongemock
 zalgo-text
 geopy
 nltk
+gogoanime-api
 psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
