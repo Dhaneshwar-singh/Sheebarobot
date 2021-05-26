@@ -3,7 +3,7 @@ from telethon.tl import functions, types
 
 from SheebaQueen.events import register as Asuna
 from SheebaQueen import telethn as tbot
-from SheebaQueen.pyrogramee.telethonuserbot import ubot
+from SheebaQueen.pyrogramee.telethonbasics import ubot
 
 
 async def is_register_admin(chat, user):
