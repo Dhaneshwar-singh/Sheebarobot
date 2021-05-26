@@ -1,6 +1,7 @@
 from gogoanimeapi import gogoanime as anime
 from telethon import types, Button, events
-from SheebaQueen import GogoAnime
+from SheebaQueen.telethon import tbot as GogoAnime
+
 
 @GogoAnime.on(events.NewMessage(pattern="^/gogo ?(.*)"))
 async def gogo(event):
