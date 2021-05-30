@@ -3,7 +3,7 @@ from SheebaQueen.events import register
 from telethon import types, Button, events
 
 
-@game.on(events.NewMessage(pattern="^/game ? (.*)"))
+@game.on(events.register(pattern="^/game ? (.*)"))
 async def game (event):
  return await event.reply("hello, this is message")
 
