@@ -78,3 +78,7 @@ async def episode(event):
     cbutton.append(butons)
     butons = []
  await event.edit(text, buttons=cbutton)
+
+
+__mode_name__ ="Anime Download"
+__help__= """ /gogo : Download Anime """
