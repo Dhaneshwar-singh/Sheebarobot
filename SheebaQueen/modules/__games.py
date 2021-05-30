@@ -1,4 +1,4 @@
-from SheebaQueen import telethon as game
+from SheebaQueen import telethn as game
 
 @game(pattern="g ?(.*)")
 async def function (event):
