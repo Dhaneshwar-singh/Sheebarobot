@@ -10,9 +10,9 @@ async def game(event):
 #2048 game
 f_img="https://telegra.ph/file/dbe8d49976baf292bb372.png"
 
-@register(pattern="^/2048")
+@register(pattern="^/no")
 
-async def game(event): 
+async def no(event): 
 
       await event.reply(f_img,
                  reply_markup=InlineKeyboardMarkup(
