@@ -41,6 +41,6 @@ async def game(event):
 
 
 
-__mod_name__ = " Game"
 
-__help__ = """ COMING SOON..... """
+
+__help__ = """ COMING SOON..
