@@ -12,7 +12,22 @@ async def game(event):
 
 async def game(event): 
 
-      await event.reply("/2048 : 2048 No. making game") 
+      await event.reply(
+         reply_markup = InlineKeyboardMarkup(
+         
+         [InlineKeyboardButton(
+
+                        "", url="t.me/vcmusicplayerlightning"
+
+                    )
+
+                ],
+         
+         
+      
+      
+      
+      ) 
 
 
 
