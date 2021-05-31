@@ -19,7 +19,7 @@ async def game(event):
          
          [InlineKeyboardButton(
 
-                        "PLAY Game", url="https://sheebaga.heliohost.us"
+                        "PLAY Game", url="https://sheebaga.heliohost.us")
 
                     )
 
