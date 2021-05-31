@@ -80,5 +80,5 @@ async def episode(event):
  await event.edit(text, buttons=cbutton)
 
 
-__mode_name__ ="Anime Download"
+__mod_name__ ="Anime Download"
 __help__= """ /gogo : Download Anime """
