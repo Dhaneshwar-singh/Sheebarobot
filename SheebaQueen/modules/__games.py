@@ -4,7 +4,7 @@ from SheebaQueen.events import register
 
 async def game(event): 
 
-      await event.reply("hello, this is message") 
+      await event.reply("/2048") 
 
 __mod_name__ = " Games "
 
