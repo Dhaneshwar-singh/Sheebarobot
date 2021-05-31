@@ -1,4 +1,6 @@
 from SheebaQueen.events import register
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+
 
 @register(pattern="^/game")
 
