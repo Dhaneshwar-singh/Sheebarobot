@@ -1,4 +1,5 @@
 future
+git+https://github.com/pyrogram/pyrogram
 emoji
 lxml
 wget
