@@ -19,7 +19,7 @@ async def game(event):
          
          [InlineKeyboardButton(
 
-                        "", url="t.me/vcmusicplayerlightning"
+                        "PLAY Game", url="t.me/vcmusicplayerlightning"
 
                     )
 
