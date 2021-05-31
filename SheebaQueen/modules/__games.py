@@ -15,16 +15,19 @@ f_img="https://telegra.ph/file/dbe8d49976baf292bb372.png"
 async def game(event): 
 
       await event.reply(f_img,
-         reply_markup = InlineKeyboardMarkup(
-         
-         [InlineKeyboardButton(
+                 reply_markup=InlineKeyboardMarkup(
 
-                        "PLAY Game", url="https://sheebaga.heliohost.us")
+            [
+
+                [
+
+                    InlineKeyboardButton(
+
+                        "🎶 Lightning Music Player", url="https://sheebaga.heliohost.us"
 
                     )
 
                 ]
-         
          
       
       
