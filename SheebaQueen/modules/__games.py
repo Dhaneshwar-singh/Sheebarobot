@@ -27,7 +27,7 @@ async def game(event):
 
                     )
 
-                ]
+                ] ]
          
       
       
