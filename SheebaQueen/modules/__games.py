@@ -43,4 +43,4 @@ async def game(event):
 
 
 
-__help__ = """ COMING SOON..
+
