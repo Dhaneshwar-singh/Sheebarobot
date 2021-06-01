@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 async def game(event): 
 
-      await event.reply("Games Below "InlineKeyboardMarkup(
+      await event.reply("Games Below " , InlineKeyboardMarkup(
 
             [
 
