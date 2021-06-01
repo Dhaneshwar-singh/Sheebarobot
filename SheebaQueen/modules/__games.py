@@ -7,7 +7,7 @@ async def game(event):
 
       await event.reply("/no : makin 2048 no.")
 #2048 game
-f_img="https://telegra.ph/file/dbe8d49976baf292bb372.png"
+f_img= http://sheebaga.heliohost.us
 
 @register(pattern="^/no")
 
