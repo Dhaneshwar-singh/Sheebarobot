@@ -1,6 +1,5 @@
 from SheebaQueen.events import register
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-
+from telethn import Button
 
 @register(pattern="^/game")
 
@@ -14,12 +13,8 @@ f_img="https://telegra.ph/file/dbe8d49976baf292bb372.png"
 
 async def no(event): 
 
-      await event.reply(f_img, [
-    [
-        InlineKeyboardButton(
-            text="2048", url="sheebaga.heliohost.com")
-    ]
+      await event.reply(f_img, buttons = [[
+Button.url("2048 No. Game" "sheebaga.heliohost.us")
 
-])
-                  
+]]  )                
 
