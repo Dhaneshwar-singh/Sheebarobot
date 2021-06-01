@@ -14,8 +14,8 @@ f_img="https://telegra.ph/file/dbe8d49976baf292bb372.png"
 
 async def no(event): 
 
-      await event.reply(f_img,
-                    reply_markup = InlineKeyboardMarkup(
+      await event.reply(
+                     InlineKeyboardMarkup(
 
             [
 
