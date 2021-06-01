@@ -23,7 +23,7 @@ async def game(event):
       
       
       
-                       ) 
+                       ) )
 ) 
 #2048 game
 f_img="https://telegra.ph/file/dbe8d49976baf292bb372.png"
