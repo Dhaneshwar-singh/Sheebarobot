@@ -17,8 +17,8 @@ async def no(event):
       await event.reply(f_img, [
     [
         InlineKeyboardButton(
-            text="2048", url="sheebaga.heliohost.com"),
-    ],
+            text="2048", url="sheebaga.heliohost.com")
+    ]
 
 ])
                   
