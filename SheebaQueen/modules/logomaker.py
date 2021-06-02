@@ -3,7 +3,7 @@ from SheebaQueen import OWNER_ID
 from SheebaQueen import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
-
+import random
 
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
@@ -20,7 +20,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./SheebaQueen/resources/blackbg.jpg')
+    img = Image.open(reply_photo(random.choice()))
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
