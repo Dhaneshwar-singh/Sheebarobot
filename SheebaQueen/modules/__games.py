@@ -1,5 +1,5 @@
 from SheebaQueen.events import register
-from telethon import Buttons
+from telethon import Button
 
 
 @register(pattern="^/game")
