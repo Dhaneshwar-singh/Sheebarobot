@@ -2,11 +2,11 @@ from SheebaQueen.events import register
 from telethon import Button
 
 
-@register(pattern="^/game")
+#@register(pattern="^/game")
 
-async def game(event): 
+#async def game(event): 
 
-     await event.reply("/no : makin 2048 no. /run : run game  /slice :  ball slice game")
+    # await event.reply("/no : makin 2048 no. /run : run game  /slice :  ball slice game")
 #2048 game
 
 @register(pattern="^/no")
