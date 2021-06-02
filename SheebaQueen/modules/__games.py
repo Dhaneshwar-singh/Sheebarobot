@@ -7,8 +7,8 @@ from telethon import Buttons
 async def game(event): 
 
       await event.reply("/no : makin 2048 no.
-,/run : for run game
-, /slice : Pokemon slice game")
+/run : for run game
+ /slice : Pokemon slice game")
 #2048 game
 
 @register(pattern="^/no")
