@@ -8,7 +8,7 @@ from telethon import Button
 
 async def game(event): 
 
-      await event.reply("These Are Some Best Game Providided By Me To You"
+      await event.reply("These Are Some Best Game Providided By Me To You",
 buttons = [[
 Button.url("2048 No. Game" , 
 url ="sheebaga.heliohost.us")]])
