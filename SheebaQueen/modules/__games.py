@@ -1,17 +1,12 @@
 from SheebaQueen.events import register
 from telethon import Button
 
+
+
+
 @register(pattern="^/game")
 
 async def game(event): 
-
-      await event.reply("/no : makin 2048 no.")
-#2048 game
-
-
-@register(pattern="^/no")
-
-async def no(event): 
 
       await event.reply(buttons = [[
 Button.url("2048 No. Game" , url ="sheebaga.heliohost.us")
@@ -25,3 +20,5 @@ Button.url("Rome Run",url="https://games.cdn.famobi.com/html5games/o/om-nom-run/
 
 ]]  )                
 
+__mod_name__ = Game
+__help__ = /game ==>> get button for all available games
