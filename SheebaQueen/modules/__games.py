@@ -20,5 +20,7 @@ Button.url("Rome Run",url="https://games.cdn.famobi.com/html5games/o/om-nom-run/
 
 ]]  )                
 
-__mod_name__ = Game
-__help__ = /game ==>> get button for all available games
+__mod_name__ = "Game"
+__help__ ="""
+ /game ==>> get button for all available games
+"""
