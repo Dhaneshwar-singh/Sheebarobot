@@ -5,7 +5,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 import random
 im = ("./SheebaQueen/resources/images.jpeg")
-@register(pattern="^/logo ?(.*)")
+@register(pattern="^/mlogo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
