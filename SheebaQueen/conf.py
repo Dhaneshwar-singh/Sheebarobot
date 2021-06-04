@@ -29,6 +29,6 @@ def get_int_key(name, required=False):
         return None
     elif not data:
         LOGGER.critical("No int key: " + name)
-        sys.exit(2)
+            exit(2)
     else:
         return data
