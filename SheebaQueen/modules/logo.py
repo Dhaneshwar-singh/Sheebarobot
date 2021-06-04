@@ -111,4 +111,4 @@ async def logo_gen(event):
             os.remove(font_)
 
 
-HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=HNDLR)}"})
+
