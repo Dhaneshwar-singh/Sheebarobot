@@ -1,7 +1,7 @@
 from pyrogram import filters
 
 from SheebaQueen.pyrogramee.pluginshelper import admins_only
-from SheebaQueen.services.pyrogram import pbot as app
+from SheebaQueen.resources.pyrogram import pbot as app
 
 
 @app.on_message(filters.command("ss") & ~filters.private & ~filters.edited)
