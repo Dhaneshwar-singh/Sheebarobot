@@ -27,8 +27,8 @@ def get_int_key(name, required=False):
     if not (data := env.int(name, default=default)) and not required:
         LOGGER.warn("No int key: " + name)
         return None
-    elif not data:
-        LOGGER.critical("No int key: " + name)
-            exit(2)
+    #elif not data:
+        #LOGGER.critical("No int key: " + name)
+           # exit(2)
     else:
         return data
