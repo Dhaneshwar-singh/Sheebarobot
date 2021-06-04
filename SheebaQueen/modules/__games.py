@@ -33,11 +33,23 @@ async def run(event):
       await event.reply("Some Games By Me"
 ,buttons=[[Button.url("Rom Run ",url="https://games.cdn.famobi.com/html5games/o/om-nom-run/v1140/?fg_domain=play.famobi.com&fg_aid=A1000-1&fg_uid=abe80572-560a-444d-baf7-2fa4a7b2c02f&fg_pid=4638e320-4444-4514-81c4-d80a8c662371&fg_beat=177&original_ref=android-app%3A%2F%2Forg.telegram.messenger%2F")]])
 
-
+#treasure hunt
+@register(pattern="^/hunt")
+async def hunt(event):
+      
+       await event.reply("Treasure Hunt Game",
+buttons=[[Button.url("Treasure Hunt",url="https://www.hiddenobjectgames.com/game/Jungle+Mysteries")]])
 
 __mod_name__ = "Game"
 __help__ ="""
- /game ==>> get button for all available games
+ /hunt ==>> Treasure Hunt Game games
+/run ===>> Running Game
+/no ==>> 2048 block No. making game
+/slice ===>> Slice The pokeball (like fruit slice in mpl)
+
+
+
+
 """
 
 
