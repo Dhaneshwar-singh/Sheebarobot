@@ -22,7 +22,7 @@ import time
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 
-from SheebaQueen import telethon as tbot
+
 from SheebaQueen.events import register
 
 @ultroid_cmd(pattern="logo ?(.*)")
