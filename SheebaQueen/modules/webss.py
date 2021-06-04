@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from SheebaQueen.pyrogramee.pluginhelpers import admins_only
+from SheebaQueen.pyrogramee.pluginshelper import admins_only
 from SheebaQueen.services.pyrogram import pbot as app
 
 
