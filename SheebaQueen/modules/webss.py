@@ -1,10 +1,10 @@
 from pyrogram import filters
 
-from SheebaQueen.function.pluginhelpers import admins_only
+from SheebaQueen.pyrogramee.pluginhelpers import admins_only
 from SheebaQueen.services.pyrogram import pbot as app
 
 
-@app.on_message(filters.command("webss") & ~filters.private & ~filters.edited)
+@app.on_message(filters.command("ss") & ~filters.private & ~filters.edited)
 @admins_only
 async def take_ss(_, message):
     if len(message.command) != 2:
@@ -22,3 +22,9 @@ async def take_ss(_, message):
         await m.edit("No Such Website.")
         return
     await m.delete()
+__mod_name__ = "Web Ss "
+__help__ = """
+/ss < website url/domain> ===>>  use this module to take like ss of any website
+ ×------××----
+/ss telegram.org
+"""
