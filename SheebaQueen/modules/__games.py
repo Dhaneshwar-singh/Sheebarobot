@@ -9,11 +9,12 @@ from telethon import Button
     # await event.reply("/no : makin 2048 no. /run : run game  /slice :  ball slice game")
 #2048 game
 im = ("./SheebaQueen/img/g.png")
+m = Image.open(I'm)
 @register(pattern="^/no")
 
 async def no(event): 
 
-      await event.reply((im)
+      await event.reply(m
 ,buttons=[[Button.url("2048 game ",url="sheebaga.heliohost.us")]])
 #pokemon sluce
 
