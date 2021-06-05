@@ -31,7 +31,7 @@ async def logo_gen(event):
     name = event.pattern_match.group(1)
     if not name:
         await eod(xx, "`Give a name too!`")
-    bg_, font_ = "", ""
+    bg_, font_ = "https://source.unsplash.com/random", ""
     if event.reply_to_msg_id:
         temp = await event.get_reply_message()
         if temp.media:
