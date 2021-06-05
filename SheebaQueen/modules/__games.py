@@ -9,7 +9,7 @@ from telethon import Button
     # await event.reply("/no : makin 2048 no. /run : run game  /slice :  ball slice game")
 #2048 game
 im = ("./SheebaQueen/img/g.png")
-m = Image.open(I'm)
+m = Image.open(im)
 @register(pattern="^/no")
 
 async def no(event): 
