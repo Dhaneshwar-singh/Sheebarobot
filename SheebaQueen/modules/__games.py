@@ -1,5 +1,6 @@
 from SheebaQueen.events import register
 from telethon import Button
+from PIL import Image, ImageDraw, ImageFont
 
 
 #@register(pattern="^/game")
