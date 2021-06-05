@@ -13,7 +13,7 @@ im = ("./SheebaQueen/img/g.png")
 
 async def no(event): 
 
-      await event.reply("Some Games By Me"
+      await event.reply(im
 ,buttons=[[Button.url("2048 game ",url="sheebaga.heliohost.us")]])
 #pokemon sluce
 
