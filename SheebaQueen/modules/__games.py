@@ -43,7 +43,7 @@ async def hunt(event):
 buttons=[[Button.url("Treasure Hunt",url="https://www.hiddenobjectgames.com/game/Jungle+Mysteries")]])
 
 #ludo 
-@register(pattern="^/ludoGame")
+@register(pattern="^/ludo")
 
 async def hunt(event):
 
