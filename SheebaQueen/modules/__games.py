@@ -42,13 +42,26 @@ async def hunt(event):
        await event.reply("Treasure Hunt Game",
 buttons=[[Button.url("Treasure Hunt",url="https://www.hiddenobjectgames.com/game/Jungle+Mysteries")]])
 
+#ludo 
+@register(pattern="^/ludoGame")
+
+async def hunt(event):
+
+      
+
+       await event.reply("Ludo Game",
+
+buttons=[[Button.url("Play Ludo Game",url="https://poki.com/en/g/ludo-multiplayer#fullscreen")]])
+
+
+
 __mod_name__ = "Game"
 __help__ ="""
  /hunt ==>> Treasure Hunt Game games
 /run ===>> Running Game
 /no ==>> 2048 block No. making game
 /slice ===>> Slice The pokeball (like fruit slice in mpl)
-
+/ludo ==>> play ludo 
 
 
 
