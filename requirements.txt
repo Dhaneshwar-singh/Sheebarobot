@@ -18,7 +18,19 @@ zalgo-text
 geopy
 nltk
 gogoanime-api
+Pyrogram
 
+TgCrypto
+
+youtube_dl
+
+gTTS
+
+pyaml
+
+youtube-search-python
+
+python-mpv
 psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
