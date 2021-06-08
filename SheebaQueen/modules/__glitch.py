@@ -9,13 +9,13 @@ async def _(e):
     if not (reply and reply.media):
             (e, "Reply to any media")
     wut = (reply)
-    if not reply.startswith(("pic", "sticker")):
+    if not reply(("pic", "sticker")):
         return await (e, "`Unsupported Media`")
     xx = await (e, "`Gliching...`")
     ok = await bot.download_media(reply.media)
     cmd = f"glitch_me gif --line_count 200 -f 10 -d 50 '{ok}' ult.gif"
     stdout, stderr = await bash(cmd)
-    await ultroid_bot.send_file(
+    await @register.send_file(
         e.chat_id, "ult.gif", force_document=False, reply_to=reply
     )
     await xx.delete()
