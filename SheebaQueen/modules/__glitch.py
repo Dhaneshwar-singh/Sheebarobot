@@ -8,8 +8,8 @@ async def _(e):
     reply = await e.get_reply_message()
     if not (reply and reply.media):
             (e, "Reply to any media")
-    wut = (reply_media)
-    if not wut.startswith(("pic", "sticker")):
+    wut = (reply)
+    if not .startswith(("pic", "sticker")):
         return await (e, "`Unsupported Media`")
     xx = await (e, "`Gliching...`")
     ok = await bot.download_media(reply.media)
