@@ -7,7 +7,7 @@ from SheebaQueen.events import register
 async def _(e):
     reply = await e.get_reply_message()
     if not (reply and reply.media):
-        return await (e, "Reply to any media")
+         await (e, "Reply to any media")
     wut = Mediainfo(reply.media)
     if not wut.startswith(("pic", "sticker")):
         return await (e, "`Unsupported Media`")
