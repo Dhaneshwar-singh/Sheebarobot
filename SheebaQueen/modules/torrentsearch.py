@@ -5,6 +5,7 @@ import asyncio
 import json
 from bs4 import BeautifulSoup 
 from telethon import events
+from SheebaQueen.events import register
 
 
 def dogbin(magnets):
@@ -19,7 +20,7 @@ def dogbin(magnets):
 		counter = counter + 1
 	return urls	
 	
-@borg.on(pattern="^/tsearch ?(.*)")
+@register(pattern="^/tsearch ")
 async def tor_search(event):
 	if event.fwd_from:
 		return 
