@@ -1,5 +1,5 @@
 import os
-
+from MediaInfo import MediaInfo
 from SheebaQueen.events import register
 
 
