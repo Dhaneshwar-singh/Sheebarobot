@@ -2,6 +2,7 @@ future
 MediaInfo
 git+https://github.com/pyrogram/pyrogram
 emoji
+fontTools
 lxml
 wget
 gtts
