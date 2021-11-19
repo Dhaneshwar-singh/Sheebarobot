@@ -32,15 +32,15 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/developer-boy-sdowner/Sheebarobot/)
 
-```
 
-This Bot is Created by @Developer_boy_sd_owner on TeleGram, If your kanging this without fork at least give a credit to get a smile of my hard work.
- 
+
+## This Bot is Created by @Developer_boy_sd_owner on TeleGram, If your kanging this without fork at least give a credit to get a smile of my hard work.
+# CREDITS
 👉 YoneRobot
 👉DaisyX
 
 
-
+```
 $ git clone https://github.com/developer-boy-sdowner/Sheebarobot
 
 ```
