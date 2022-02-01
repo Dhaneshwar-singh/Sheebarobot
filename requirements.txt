@@ -1,8 +1,14 @@
 future
+pySmartDL
 MediaInfo
+PyDictionary==2.0.1
 git+https://github.com/pyrogram/pyrogram
 emoji
 fontTools
+opencv-python-headless
+python-arq
+aiofiles
+uvloop
 lxml
 wget
 gtts
@@ -21,24 +27,23 @@ geopy
 nltk
 
 Pyrogram
-
+aria2p
 TgCrypto
 
-youtube_dl
 
+glitch_this
 gTTS
 
 pyaml
-
-youtube-search-python
 
 python-mpv
 psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
 CurrencyConverter
-#googletrans
-google_trans_new
+googletrans==4.0.0-rc1
+google-trans-new==1.1.9
+gpytranslate
 jikanpy
 speedtest-cli
 coffeehouse==2.2.4
@@ -57,12 +62,16 @@ ujson
 pretty_errors
 TgCrypto
 Pyrogram
-youtube-dl
-youtube_search_python
-youtube_search
+youtube-dl==2021.6.6
+youtube_search==2.1.0
+lyrics_extractor
+youtube_search_python==1.4.6
 asyncio
+
+
+
 dateparser==1.0.0
-pymongo==3.11.0
+pymongo
 dnspython
 secureme
 apscheduler
