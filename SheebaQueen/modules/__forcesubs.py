@@ -1,5 +1,5 @@
 # credits @InukaAsith, @Mr_dark_prince
-
+"""
 import logging
 import time
 
@@ -177,9 +177,7 @@ def config(client, message):
         message.reply_text(
             "❗ **Group Creator Required**\n__You have to be the group creator to do that.__"
         )
-
-
-__help__ = """
+__help__ = 
 *Force Subscribe:*
 ❍ Sheeba can mute members who are not subscribed your channel until they subscribe
 ❍ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
@@ -195,5 +193,5 @@ __help__ = """
  ❍ /fsub disable - To turn of ForceSubscribe..
   💡If you disable fsub, you need to set again for working.. /fsub {channel username} 
  ❍ /fsub clear - To unmute all members who muted by me.
-"""
-__mod_name__ = "F-Sub"
+
+__mod_name__ = "F-Sub" """
